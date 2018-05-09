@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="TableViewCellType1" customModule="ProjectLLC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIO-8U-Aie">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="124"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfO-Hj-WqC">
+                                <rect key="frame" x="165" y="61" width="160" height="30"/>
+                                <state key="normal" title="Unlike"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gag-do-ERl">
+                                <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks3-7n-ked">
+                                <rect key="frame" x="0.0" y="35" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrl-Fk-PYG">
+                                <rect key="frame" x="0.0" y="61" width="160" height="30"/>
+                                <state key="normal" title="Like"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5T-NM-St3">
+                                <rect key="frame" x="0.0" y="96" width="325" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mrl-Fk-PYG" firstAttribute="width" secondItem="FfO-Hj-WqC" secondAttribute="width" id="5Gt-Vo-5YN"/>
+                            <constraint firstItem="mrl-Fk-PYG" firstAttribute="leading" secondItem="LIO-8U-Aie" secondAttribute="leading" id="7lS-te-jb9"/>
+                            <constraint firstItem="Gag-do-ERl" firstAttribute="leading" secondItem="LIO-8U-Aie" secondAttribute="leading" id="Ppd-8j-SPN"/>
+                            <constraint firstAttribute="trailing" secondItem="O5T-NM-St3" secondAttribute="trailing" id="Q0n-SC-5Oq"/>
+                            <constraint firstItem="Gag-do-ERl" firstAttribute="top" secondItem="LIO-8U-Aie" secondAttribute="top" id="Rpc-ap-zc8"/>
+                            <constraint firstItem="ks3-7n-ked" firstAttribute="top" secondItem="Gag-do-ERl" secondAttribute="bottom" constant="5" id="Ufe-Tp-AIS"/>
+                            <constraint firstItem="ks3-7n-ked" firstAttribute="leading" secondItem="LIO-8U-Aie" secondAttribute="leading" id="ZOe-dm-TpV"/>
+                            <constraint firstAttribute="trailing" secondItem="ks3-7n-ked" secondAttribute="trailing" id="ZwE-Nt-AZ4"/>
+                            <constraint firstItem="O5T-NM-St3" firstAttribute="leading" secondItem="LIO-8U-Aie" secondAttribute="leading" id="bg1-s6-d5h"/>
+                            <constraint firstItem="mrl-Fk-PYG" firstAttribute="top" secondItem="ks3-7n-ked" secondAttribute="bottom" constant="5" id="dH1-x2-qi9"/>
+                            <constraint firstItem="O5T-NM-St3" firstAttribute="top" secondItem="FfO-Hj-WqC" secondAttribute="bottom" constant="5" id="fzl-qR-ZUS"/>
+                            <constraint firstAttribute="trailing" secondItem="Gag-do-ERl" secondAttribute="trailing" id="p8I-iP-eld"/>
+                            <constraint firstAttribute="trailing" secondItem="FfO-Hj-WqC" secondAttribute="trailing" id="t2Q-wg-a8C"/>
+                            <constraint firstAttribute="height" constant="124" id="tVV-qC-CLB"/>
+                            <constraint firstItem="FfO-Hj-WqC" firstAttribute="top" secondItem="ks3-7n-ked" secondAttribute="bottom" constant="5" id="xvO-sT-Vtl"/>
+                            <constraint firstItem="FfO-Hj-WqC" firstAttribute="leading" secondItem="mrl-Fk-PYG" secondAttribute="trailing" constant="5" id="zNf-2A-zNV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LIO-8U-Aie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8kI-QK-Faf"/>
+                    <constraint firstItem="LIO-8U-Aie" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AZL-DZ-OVt"/>
+                    <constraint firstAttribute="bottom" secondItem="LIO-8U-Aie" secondAttribute="bottom" id="RtT-Yj-rmu"/>
+                    <constraint firstAttribute="trailing" secondItem="LIO-8U-Aie" secondAttribute="trailing" id="xrd-hF-m3J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="likeButton" destination="mrl-Fk-PYG" id="A3A-Vr-jab"/>
+                <outlet property="name" destination="Gag-do-ERl" id="Mmx-ye-o0V"/>
+                <outlet property="rating" destination="ks3-7n-ked" id="cxx-p3-Kmu"/>
+                <outlet property="unlikeButton" destination="FfO-Hj-WqC" id="f7u-F8-fBX"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="92"/>
+        </tableViewCell>
+    </objects>
+</document>
